@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+:root {
+    --primary-color: #ffc8d2;
+    --secondary-color: #f6f6f6;
+}
+
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+nav {
+    background-color: var(--secondary-color);
+}
+
+nav>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.nav-title {
+    color: blue !important;
+    text-decoration: none;
+}
+
+.nav-links {
+    margin-left: 35px;
+}
+
+.nav-links>a {
+    color: black;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s all;
+}
+
+.active-nav-link {
+    background-color: var(--primary-color);
+    outline: none;
+    border: none;
+    padding: 10px;
+    width: 220px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.nav-links>a:hover {
+    color: rgb(110, 110, 110);
+}
+
+.new-blog-btn {
+    background-color: #ffc8d2;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.blog-container {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.container-75 {
+    width: 75%;
+    margin: auto;
+}
+
+.color-p-1 {
+    color: var(--primary-color);
+}
+
+.color-dark {
+    color: black;
+}
+
+.color-red {
+    color: red;
+}
+
+.primary-btn {
+    background-color: var(--primary-color);
+    outline: none;
+    border: none;
+    padding: 10px;
+    width: 220px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.margin-10 {
+    margin: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+
+}
+
+.text-decoration-none {
+    text-decoration: none;
+}
+
+.error-msg {
+    background-color: #ff000047;
+    border: 1px solid red;
+    padding: 5px;
+}

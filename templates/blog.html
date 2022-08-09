@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block header %}
+    <title>Blog | {{blog.title}}</title>
+{% endblock header %}
+
+{% block body %}
+<div class="container-75">
+    {% if blog==None %}
+	<h2 class="text-center">No blog found with this ID.</h2>
+	{% else %}
+    <h1 class="color-red"><b><i>{{blog.title}}</i></b></h1>
+    <h2><b>Written by {{blog.author}}</b></h2>
+
+    <p class="margin-t-20">
+        {{blog.body}}
+    </p>
+    <form action="/blog/{{blog.id}}" method="POST">
+        <button type="submit" class="primary-btn">Delete</button>
+    </form>
+    {% endif %}
+</div>
+{% endblock body %}
