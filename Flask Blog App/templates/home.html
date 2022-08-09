@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block header %}
+    <title>Home</title>
+{% endblock header %}
+
+{% block body %}
+<div class="container">
+    {% if blogList|length ==0 %}
+	<h2 class="text-center">There are no blogs to show yet.</h2>
+	{% else %}
+    {% for blog in blogList %}
+    <a class="text-decoration-none" href="/blog/{{blog.id}}">
+         <div class="blog-container">
+         <h2 class="color-red">{{blog.title}}</h2>
+         <p class="color-dark">Written by {{blog.author}}</p>
+        </div>
+    </a>
+    {% endfor %}
+    {% endif %}
+</div>
+    
+{% endblock body %}
